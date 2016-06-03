@@ -1,0 +1,1 @@
+The .cmd scripts are for use in a Windows environmentThe .sh scripts are for use in a Unix environmentAll of them assume that you have the java program (the JVM) on your path.  If you don't, then you'll have to either put it on your path, or modify the scripts.
