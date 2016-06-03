@@ -16,5 +16,6 @@
 
 	<modules>
 		<module>SpringLab-Parent</module>
+		<module>SpringLab-01.1</module>
 	</modules>
 </project>
