@@ -1,0 +1,76 @@
+password for document: PayPal
+
+JavaBean and spring bean is different
+http://stackoverflow.com/questions/21866571/difference-javabean-and-spring-bean
+http://www.shaunabram.com/beans-vs-pojos/
+
+Java Beans: At a basic level, JavaBeans are simply Java classes which adhere to certain coding conventions. For example, classes that
+	Have a public default (no argument) constructor
+	allows access to properties using accessor (getter and setter) methods
+	Implement java.io.Serializable
+Spring Beans: A Spring bean is basically an object managed by Spring. More specifically, it is an object that is instantiated, configured and otherwise "managed by a Spring Framework container". Spring beans are defined in a Spring configuration file (or, more recently, by using annotations), instantiated by the Spring container, and then injected into your application.
+
+Note that Spring Beans need not to be Java Beans always. Spring Beans may not implement java.io.Serializable Interface, can have arguments in constructor etc.
+
+ASF -- Atlas server framework
+sparta --> kraken(on top of node.js, dust.js, react.js) : web framework
+
+helix -> raptor -> 
+squbs: for async processing, based on scala
+AKKA and AKKA https(Spray)
+https://github.com/paypal/squbs
+
+
+
+set method would be called?
+
+https://spring.io/
+http://projects.spring.io/spring-framework/
+
+
+create user library
+window->preferences ->Java -> Build Path -> User Libraries
+
+
+@PostConstruct
+or init- in application.xml
+or InitializingBean
+
+
+day 1 session 1 to session 2: page 1 ~ page 112 
+day 2 session 3 to session ?:
+
+
+https://github.com/gaje85/springexamples
+https://github.com/cglib/cglib
+https://en.wikipedia.org/wiki/HATEOAS
+https://github.paypal.com/GlobalTechEd/RaptorREST
+
+Day2:
+IOC complete
+factory and cons example
+AOP intro and example
+Spring DAO and transaction management
+Spring Boot based rest service
+
+Day3
+spring batch
+raptor 3 intro and usage of spring container in raptor code
+
+ETL: Extract data, Transform it, Load it into 
+
+batch -> step: read, processor, writer->implement Tasklet interface
+bacth -> step: Tasklet(single java code
+
+Chunk-oriented - multiple read/processing actions, single write
+
+
+docker
+
+
+
+https://github.paypal.com/ConsumerServices-Release/consumerreferralsserv/blob/develop/consumerreferralsservService/src/main/java/com/paypal/consumer/referral/impl/ConsumerReferralsResourceImpl.java
+
+https://github.paypal.com/ConsumerServices-Release/frsclaimserv/tree/develop/frsclaimservService
+
+https://github.paypal.com/Compliance-R/batchcompautorecovery
