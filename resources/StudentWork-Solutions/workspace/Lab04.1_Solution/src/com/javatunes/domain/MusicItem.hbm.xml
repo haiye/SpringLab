@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+<hibernate-mapping>
+
+    <class name="com.javatunes.domain.MusicItem" table="MusicItem">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+
+        <property name="title" type="string" column="Title"/>
+        <property name="artist" type="string" column="Artist"/>
+        <property name="releaseDate" type="date" column="ReleaseDate"/>
+        <property name="price" type="big_decimal" column="Price"/>
+        
+		<property name="musicCategory" column="MusicCategory">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.javatunes.domain.MusicCategory</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>        
+
+    </class>
+    
+</hibernate-mapping>
